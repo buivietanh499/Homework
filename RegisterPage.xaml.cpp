@@ -4,7 +4,7 @@
 #include "MainPage.xaml.h"
 #include <ppltasks.h>
 #include <regex>
-#include "Data/UserDataHelper.h"
+#include <Data/UserDataHelper.h>
 
 using namespace Windows::UI::Xaml::Interop;
 using namespace Group4_project;
@@ -12,6 +12,12 @@ using namespace Platform;
 using namespace Windows::UI::Xaml;
 using namespace Windows::UI::Xaml::Controls;
 using namespace concurrency;
+
+RegisterPage::RegisterPage()
+{
+	InitializeComponent();
+}
+
 void RegisterPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 {
 	std::wstring email = EmailTextBox->Text->Data();
@@ -46,6 +52,7 @@ void RegisterPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 		dialog->ShowAsync();
 		return;
 	}
+
 	if (password != confirmPassword)
 	{
 		ContentDialog^ dialog = ref new ContentDialog();
@@ -55,6 +62,17 @@ void RegisterPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 		dialog->ShowAsync();
 		return;
 	}
+
+	if (UserDataHelper::IsEmailExists(email))
+	{
+		ContentDialog^ dialog = ref new ContentDialog();
+		dialog->Title = "入力エラー";
+		dialog->Content = "このメールアドレスはすでに使用されています。";
+		dialog->CloseButtonText = "OK";
+		dialog->ShowAsync();
+		return;
+	}
+
 	User newUser{ email, password, name };
 	if (UserDataHelper::SaveUser(newUser))
 	{
@@ -77,12 +95,5 @@ void RegisterPage::GoBackToMainPage_Click(Object^ sender, RoutedEventArgs^ e)
 {
 	this->Frame->Navigate(TypeName(MainPage::typeid));
 }
-RegisterPage::RegisterPage()
-{
-	InitializeComponent();
-}
-
-
-
 
 

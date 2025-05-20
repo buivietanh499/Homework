@@ -8,10 +8,10 @@
         <TextBlock Text="レジスター" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,69,0,120" Width="110"/>
 
         <StackPanel Spacing="15" Margin="30,128,30,30">
-            <TextBlock Text="メールアドレス" FontWeight="SemiBold" />
-            <TextBox x:Name="EmailTextBox" PlaceholderText="メールアドレスを入力してください" />
             <TextBlock Text="名前" FontWeight="SemiBold" />
             <TextBox x:Name="NameTextBox" PlaceholderText="名前を入力してください" />
+            <TextBlock Text="メールアドレス" FontWeight="SemiBold" />
+            <TextBox x:Name="EmailTextBox" PlaceholderText="メールアドレスを入力してください" />
             <TextBlock Text="パスワード" FontWeight="SemiBold" />
             <PasswordBox x:Name="PasswordTextBox" PlaceholderText="パスワードを入力してください" />
             <TextBlock Text="パスワード（確認）" FontWeight="SemiBold" />

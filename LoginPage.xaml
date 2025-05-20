@@ -13,7 +13,7 @@
             <TextBlock Text="ログイン" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center"/>
             <TextBox x:Name="EmailTextBox" PlaceholderText="メール" />
             <PasswordBox x:Name="PasswordTextBox" PlaceholderText="パスワード" />
-            <Button Content="ログイン" Click="LoginButton_Click" />
+            <Button Content="OK" Click="LoginButton_Click" />
             <HyperlinkButton Content="アカウントをお持ちでない方はこちら" 
                  Click="GoToRegisterPage_Click" 
                  HorizontalAlignment="Right"/>

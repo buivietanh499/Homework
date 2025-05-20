@@ -61,6 +61,27 @@ std::vector<User> UserDataHelper::LoadUsers()
 	return users;
 }
 
+bool UserDataHelper::IsEmailExists(const std::wstring& email)
+{
+	auto folder = ApplicationData::Current->LocalFolder;
+	std::wstring path = folder->Path->Data() + std::wstring(L"\\users.csv");
+	std::wifstream file(path + L"\\users.csv");
+	std::wstring line;
+	while (std::getline(file, line))
+	{
+		auto pos = line.find(L",");
+		if (pos != std::wstring::npos)
+		{
+			std::wstring storedEmail = line.substr(0, pos);
+			if (storedEmail == email)
+			{
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
 bool UserDataHelper::SaveUser(const User& user)
 {
 	try

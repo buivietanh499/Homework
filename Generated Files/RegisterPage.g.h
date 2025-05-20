@@ -40,8 +40,8 @@ namespace Group4_project
     
         class RegisterPage_obj1_Bindings;
     
-        private: ::Windows::UI::Xaml::Controls::TextBox^ EmailTextBox;
         private: ::Windows::UI::Xaml::Controls::TextBox^ NameTextBox;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ EmailTextBox;
         private: ::Windows::UI::Xaml::Controls::PasswordBox^ PasswordTextBox;
         private: ::Windows::UI::Xaml::Controls::PasswordBox^ ConfirmPasswordTextBox;
         private: ::Windows::UI::Xaml::Controls::Button^ RegisterButton;

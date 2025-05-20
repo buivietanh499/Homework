@@ -63,5 +63,6 @@
     <None Include="Data\users.csv">
       <Filter>Data</Filter>
     </None>
+    <None Include=".gitignore" />
   </ItemGroup>
 </Project>

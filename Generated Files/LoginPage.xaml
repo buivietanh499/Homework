@@ -13,7 +13,7 @@
             <TextBlock Text="ログイン" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center"/>
             <TextBox x:ConnectionId='2' x:Name="EmailTextBox" PlaceholderText="メール" />
             <PasswordBox x:ConnectionId='3' x:Name="PasswordTextBox" PlaceholderText="パスワード" />
-            <Button x:ConnectionId='4' Content="ログイン"                           />
+            <Button x:ConnectionId='4' Content="OK"                           />
             <HyperlinkButton x:ConnectionId='5' Content="アカウントをお持ちでない方はこちら" 
                                                 
                  HorizontalAlignment="Right"/>

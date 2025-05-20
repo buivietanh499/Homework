@@ -1,5 +1,5 @@
-﻿#pragma once
-#include "RegisterPage.g.h"
+﻿#pragma once  
+#include "RegisterPage.g.h"  
 
 namespace Group4_project
 {

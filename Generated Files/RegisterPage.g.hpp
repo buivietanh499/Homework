@@ -32,12 +32,12 @@ void ::Group4_project::RegisterPage::Connect(int __connectionId, ::Platform::Obj
     {
     case 2:
         {
-            this->EmailTextBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+            this->NameTextBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
         }
         break;
     case 3:
         {
-            this->NameTextBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+            this->EmailTextBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
         }
         break;
     case 4:

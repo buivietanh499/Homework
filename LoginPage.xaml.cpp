@@ -17,7 +17,7 @@ using namespace Windows::UI::Xaml::Interop;
 // LoginPage クラスのコンストラクタ
 LoginPage::LoginPage()
 {
-	InitializeComponent(); // XAML コンポーネントの初期化
+	InitializeComponent();
 }
 
 // ログインボタンがクリックされたときの処理
