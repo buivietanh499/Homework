@@ -1,0 +1,33 @@
+# ビルド成果物
+/build/
+/bin/
+/obj/
+/x64/
+
+# 一時ファイル
+*.log
+*.tmp
+*.swp
+*.swo
+
+# バックアップファイル
+*~
+*.bak
+
+# IDE固有ファイル (Visual Studio)
+.vs/
+*.vcxproj.user
+*.sdf
+*.opensdf
+*.user
+*.db
+
+# CMake生成ファイル
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# その他
+.DS_Store
+Thumbs.db

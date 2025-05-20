@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Group4_project.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Group4_project"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+            <TextBlock Text="旅行要約ページです。" 
+                       FontSize="28" 
+                       HorizontalAlignment="Center" SelectionChanged="TextBlock_SelectionChanged"/>
+
+            <Button Content="ログイン" 
+                    Width="240" 
+                    Click="LoginButton_Click"/>
+
+            <Button Content="会員登録" 
+                    Width="239" 
+                    Click="RegisterButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

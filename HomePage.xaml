@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Group4_project.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Group4_project"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Padding="30">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+            <Button Content="ログアウト"
+        Click="Logout_Click"
+        HorizontalAlignment="Right"
+        Margin="0,10,10,0"
+        Width="100"/>
+
+            <TextBlock Text="Home" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+            <Button Content="カレンダー" Width="374" Height="100" FontSize="24"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+                <Button Content="予約" Width="100" />
+                <Button Content="確認・取り消し" Width="150" />
+                <Button Content="プラン詳細" Width="100" />
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Page>
