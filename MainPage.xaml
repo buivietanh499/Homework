@@ -2,37 +2,42 @@
     x:Class="Group4_project.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Group4_project"
-    Background="White">
+    Background="#FF0078D7">
     <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="280" Spacing="24">
-            <TextBlock Text="旅行要約ページです。"
-                       FontSize="28"
-                       FontWeight="SemiBold"
-                       Foreground="#333333"
-                       HorizontalAlignment="Center"
-                       TextAlignment="Center"
-                       Margin="0,0,0,30"/>
-            <Button Content="ログイン"
-                    Width="280"
-                    Height="48"
-                    Background="#0078D7"
-                    Foreground="White"
-                    FontSize="18"
-                    FontWeight="Medium"
-                    CornerRadius="6"
-                    Click="LoginButton_Click"/>
-            <Button Content="会員登録"
-                    Width="280"
-                    Height="48"
-                    Background="Transparent"
-                    BorderBrush="#0078D7"
-                    BorderThickness="2"
-                    Foreground="#0078D7"
-                    FontSize="18"
-                    FontWeight="Medium"
-                    CornerRadius="6"
-                    Click="RegisterButton_Click"/>
-        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <!-- Ảnh núi Phú Sĩ bên trái -->
+        <Border Grid.Column="0" CornerRadius="0,0,0,0">
+            <Image Source="fuji_mountain_2.jpg" Stretch="UniformToFill" />
+        </Border>
+        <!-- Nội dung chính bên phải -->
+        <Border Grid.Column="1" Background="White" CornerRadius="0,0,0,0" Padding="40" Margin="0">
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="378" Spacing="20" Height="240">
+                <TextBlock Text="旅行要約" FontSize="28" TextAlignment="Center" />
+                <Button Content="ログイン"
+                      Width="280"
+                      Height="48"
+                      Background="#0078D7"
+                      Foreground="White"
+                      FontSize="18"
+                      FontWeight="Medium"
+                      CornerRadius="6"
+                      Click="LoginButton_Click" HorizontalAlignment="Center"/>
+                <Button Content="会員登録"
+                      Width="280"
+                      Height="48"
+                      Background="Transparent"
+                      BorderBrush="#0078D7"
+                      BorderThickness="2"
+                      Foreground="#0078D7"
+                      FontSize="18"
+                      FontWeight="Medium"
+                      CornerRadius="6"
+                      Click="RegisterButton_Click" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </Page>

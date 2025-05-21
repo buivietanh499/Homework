@@ -26,7 +26,3 @@ void MainPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 	this->Frame->Navigate(TypeName(RegisterPage::typeid));
 }
 
-void Group4_project::MainPage::TextBlock_SelectionChanged(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
-{
-
-}

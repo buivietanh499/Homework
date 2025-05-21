@@ -208,6 +208,8 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\Users\alten\Downloads\fuji_mountain.jpg" />
+    <Image Include="..\..\..\Users\alten\Downloads\fuji_mountain_2.jpg" />
     <Image Include="Assets\LockScreenLogo.scale-200.png" />
     <Image Include="Assets\SplashScreen.scale-200.png" />
     <Image Include="Assets\Square150x150Logo.scale-200.png" />
