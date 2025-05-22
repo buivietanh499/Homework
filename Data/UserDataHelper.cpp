@@ -6,6 +6,7 @@
 #include <Windows.ApplicationModel.h>
 using namespace Windows::Storage;
 using namespace Windows::ApplicationModel;
+// Đọc danh sách user từ file CSV
 std::vector<User> UserDataHelper::LoadUsers()
 {
 	std::vector<User> users;
@@ -15,28 +16,29 @@ std::vector<User> UserDataHelper::LoadUsers()
 		std::wstring localPath = std::wstring(localFolder->Path->Data()) + L"\\users.csv";
 		std::wifstream file(localPath);
 		if (!file.is_open())
-		{
 			return users;
-		}
 		std::wstring line;
+		// Bỏ qua dòng đầu tiên (header)
+		std::getline(file, line);
 		while (std::getline(file, line))
 		{
 			std::wstringstream ss(line);
-			std::wstring email, password, name;
+			std::wstring idStr, email, password, name;
+			std::getline(ss, idStr, L',');
 			std::getline(ss, email, L',');
 			std::getline(ss, password, L',');
 			std::getline(ss, name, L',');
 			if (!email.empty())
 			{
-				users.push_back({ email, password, name });
+				int id = std::stoi(idStr);
+				users.push_back({ id, email, password, name });
 			}
 		}
 	}
-	catch (...)
-	{
-	}
+	catch (...) {}
 	return users;
 }
+// Kiểm tra email đã tồn tại chưa
 bool UserDataHelper::IsEmailExists(const std::wstring& email)
 {
 	auto users = LoadUsers();
@@ -47,21 +49,36 @@ bool UserDataHelper::IsEmailExists(const std::wstring& email)
 	}
 	return false;
 }
+// Lưu user mới vào file CSV
 bool UserDataHelper::SaveUser(const User& user)
 {
 	try
 	{
 		auto folder = ApplicationData::Current->LocalFolder;
 		std::wstring path = folder->Path->Data() + std::wstring(L"\\users.csv");
+		bool fileExists = false;
+		{
+			std::wifstream checkFile(path);
+			fileExists = checkFile.is_open();
+		}
+		// Lấy ID lớn nhất hiện tại
+		auto users = LoadUsers();
+		int newId = 1;
+		if (!users.empty())
+			newId = users.back().id + 1;
 		std::wofstream file(path, std::ios::app);
 		if (file.is_open())
 		{
-			file << user.email << L"," << user.password << L"," << user.name << std::endl;
+			// Nếu file chưa có, ghi header trước
+			if (!fileExists)
+			{
+				file << L"id,email,password,name" << std::endl;
+			}
+			// Ghi user với ID mới
+			file << newId << L"," << user.email << L"," << user.password << L"," << user.name << std::endl;
 			return true;
 		}
 	}
-	catch (...)
-	{
-	}
+	catch (...) {}
 	return false;
 }

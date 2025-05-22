@@ -181,6 +181,9 @@
     <ClInclude Include="MainPage.xaml.h">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="PlanDetailPage.xaml.h">
+      <DependentUpon>PlanDetailPage.xaml</DependentUpon>
+    </ClInclude>
     <ClInclude Include="RegisterPage.xaml.h">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </ClInclude>
@@ -198,6 +201,9 @@
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PlanDetailPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="RegisterPage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -210,12 +216,62 @@
   <ItemGroup>
     <Image Include="..\..\..\Users\alten\Downloads\fuji_mountain.jpg" />
     <Image Include="..\..\..\Users\alten\Downloads\fuji_mountain_2.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\header.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\hana.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\ra-menn.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\suki-.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\susi.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\tokeidai.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\unnga.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\usi.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\zingisukann.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\fushimiinari.gif" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\kimono.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\kinkakuji.gif" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\kiyomizudera.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\mattay.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\tyadou.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\yatsuhashi.png" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\yudouhu.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\go-yatyanpuru.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\kouritou.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\so-kisoba.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\suizokukann.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\syamisenn.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\syuno-keringu.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\syurizyou.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\takoraisu.jpg" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\StoreLogo.png" />
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\test.png" />
+    <Image Include="Assets\hokkaidou\hana.jpg" />
+    <Image Include="Assets\hokkaidou\ra-menn.jpg" />
+    <Image Include="Assets\hokkaidou\suki-.jpg" />
+    <Image Include="Assets\hokkaidou\susi.jpg" />
+    <Image Include="Assets\hokkaidou\tokeidai.jpg" />
+    <Image Include="Assets\hokkaidou\unnga.jpg" />
+    <Image Include="Assets\hokkaidou\usi.jpg" />
+    <Image Include="Assets\hokkaidou\zingisukann.jpg" />
+    <Image Include="Assets\kyouto\fushimiinari.gif" />
+    <Image Include="Assets\kyouto\kimono.jpg" />
+    <Image Include="Assets\kyouto\kinkakuji.gif" />
+    <Image Include="Assets\kyouto\kiyomizudera.jpg" />
+    <Image Include="Assets\kyouto\mattay.jpg" />
+    <Image Include="Assets\kyouto\tyadou.jpg" />
+    <Image Include="Assets\kyouto\yatsuhashi.png" />
+    <Image Include="Assets\kyouto\yudouhu.jpg" />
     <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\okinawa\go-yatyanpuru.jpg" />
+    <Image Include="Assets\okinawa\kouritou.jpg" />
+    <Image Include="Assets\okinawa\so-kisoba.jpg" />
+    <Image Include="Assets\okinawa\suizokukann.jpg" />
+    <Image Include="Assets\okinawa\syamisenn.jpg" />
+    <Image Include="Assets\okinawa\syuno-keringu.jpg" />
+    <Image Include="Assets\okinawa\syurizyou.jpg" />
+    <Image Include="Assets\okinawa\takoraisu.jpg" />
     <Image Include="Assets\SplashScreen.scale-200.png" />
-    <Image Include="Assets\Square150x150Logo.scale-200.png" />
-    <Image Include="Assets\Square44x44Logo.scale-200.png" />
-    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Image Include="Assets\StoreLogo.png" />
     <Image Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
@@ -241,6 +297,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PlanDetailPage.xaml.cpp">
+      <DependentUpon>PlanDetailPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="RegisterPage.xaml.cpp">
       <DependentUpon>RegisterPage.xaml</DependentUpon>

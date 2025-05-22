@@ -5,19 +5,16 @@
 #include <ppltasks.h>
 #include <regex>
 #include <Data/UserDataHelper.h>
-
 using namespace Windows::UI::Xaml::Interop;
 using namespace Group4_project;
 using namespace Platform;
 using namespace Windows::UI::Xaml;
 using namespace Windows::UI::Xaml::Controls;
 using namespace concurrency;
-
 RegisterPage::RegisterPage()
 {
 	InitializeComponent();
 }
-
 void RegisterPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 {
 	std::wstring email = EmailTextBox->Text->Data();
@@ -52,7 +49,6 @@ void RegisterPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 		dialog->ShowAsync();
 		return;
 	}
-
 	if (password != confirmPassword)
 	{
 		ContentDialog^ dialog = ref new ContentDialog();
@@ -62,7 +58,6 @@ void RegisterPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 		dialog->ShowAsync();
 		return;
 	}
-
 	if (UserDataHelper::IsEmailExists(email))
 	{
 		ContentDialog^ dialog = ref new ContentDialog();
@@ -72,8 +67,7 @@ void RegisterPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 		dialog->ShowAsync();
 		return;
 	}
-
-	User newUser{ email, password, name };
+	User newUser{ 0, email, password, name }; // ID = 0, UserDataHelper sẽ tự cấp ID
 	if (UserDataHelper::SaveUser(newUser))
 	{
 		this->Frame->Navigate(TypeName(LoginPage::typeid));
@@ -95,5 +89,12 @@ void RegisterPage::GoBackToMainPage_Click(Object^ sender, RoutedEventArgs^ e)
 {
 	this->Frame->Navigate(TypeName(MainPage::typeid));
 }
+
+
+
+
+
+
+
 
 

@@ -22,7 +22,7 @@ using namespace Windows::UI::Xaml::Interop;
 using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
 
-#include <ppltasks.h> // ADD to use create_task
+#include <ppltasks.h> 
 using namespace concurrency;
 using namespace Windows::Storage;
 using namespace Windows::ApplicationModel;

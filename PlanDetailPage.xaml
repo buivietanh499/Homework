@@ -1,0 +1,128 @@
+﻿<Page
+    x:Class="Group4_project.PlanDetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Group4_project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White">
+    <ScrollViewer x:Name="MainScrollViewer" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <Grid x:Name="MainGrid" Margin="20">
+            <!--ダミーボタン-->
+            <Button x:Name="DummyFocusButton" Visibility="Collapsed" />
+
+            <!-- タイトル -->
+            <TextBlock Text="旅行プラン詳細"
+                               FontSize="36"
+                               FontWeight="Bold"
+                               HorizontalAlignment="Center"
+                               Margin="0,20" Foreground="#0078D7"/>
+            <TextBlock x:Name="AreaTitle"
+                               Text="地域名"
+                               FontSize="28"
+                               FontWeight="SemiBold"
+                               HorizontalAlignment="Center"
+                               Margin="0,90,0,10" />
+
+            <!-- 表示内容 -->
+            <StackPanel Margin="0,150,200,60">
+                <!-- 観光スポット1 -->
+                <StackPanel Orientation="Vertical" Margin="0,10">
+                    <!-- 観光スポット1 -->
+                    <TextBlock x:Name="SpotTitle1" Text="スポット名" FontSize="60"/>
+                    <Button Content="写真表示" Click="ShowImage1_Click" Margin="10,0" Background="#4A90E2" Foreground="White" FontWeight="Bold" CornerRadius="10" Padding="12,6"/>
+                    <TextBlock x:Name="SpotComment1_Line1" Text="コメント1行目" FontSize="40" />
+
+                    <!-- 観光スポット2 -->
+                    <TextBlock x:Name="SpotTitle2" Text="スポット名" FontSize="60"/>
+                    <Button Content="写真表示" Click="ShowImage2_Click" Margin="10,0" Background="#4A90E2" Foreground="White" FontWeight="Bold" CornerRadius="10" Padding="12,6"/>
+                    <TextBlock x:Name="SpotComment1_Line2" Text="コメント2行目" FontSize="40" />
+
+                    <!-- 観光スポット3 -->
+                    <TextBlock x:Name="SpotTitle3" Text="スポット名" FontSize="60"/>
+                    <Button Content="写真表示" Click="ShowImage3_Click" Margin="10,0" Background="#4A90E2" Foreground="White" FontWeight="Bold" CornerRadius="10" Padding="12,6"/>
+                    <TextBlock x:Name="SpotComment1_Line3" Text="コメント3行目" FontSize="40" />
+
+                    <!-- グルメ1 -->
+                    <TextBlock x:Name="SpotTitle4" Text="スポット名" FontSize="60"/>
+                    <Button Content="写真表示" Click="ShowImage4_Click" Margin="10,0" Background="#FF6F61" Foreground="White" FontWeight="Bold" CornerRadius="10" Padding="12,6"/>
+                    <TextBlock x:Name="SpotComment1_Line4" Text="コメント4行目" FontSize="40" />
+
+                    <!-- グルメ2 -->
+                    <TextBlock x:Name="SpotTitle5" Text="スポット名" FontSize="60"/>
+                    <Button Content="写真表示" Click="ShowImage5_Click" Margin="10,0" Background="#FF6F61" Foreground="White" FontWeight="Bold" CornerRadius="10" Padding="12,6"/>
+                    <TextBlock x:Name="SpotComment1_Line5" Text="コメント5行目" FontSize="40" />
+
+                    <!-- グルメ3 -->
+                    <TextBlock x:Name="SpotTitle6" Text="スポット名" FontSize="60"/>
+                    <Button Content="写真表示" Click="ShowImage6_Click" Margin="10,0" Background="#FF6F61" Foreground="White" FontWeight="Bold" CornerRadius="10" Padding="12,6"/>
+                    <TextBlock x:Name="SpotComment1_Line6" Text="コメント6行目" FontSize="40" />
+
+                    <!-- 体験1 -->
+                    <TextBlock x:Name="SpotTitle7" Text="スポット名" FontSize="60"/>
+                    <Button Content="写真表示" Click="ShowImage7_Click" Margin="10,0" Background="#FF9800" Foreground="White" FontWeight="Bold" CornerRadius="10" Padding="12,6"/>
+                    <TextBlock x:Name="SpotComment1_Line7" Text="コメント7行目" FontSize="40" />
+
+                    <!-- 体験2 -->
+                    <TextBlock x:Name="SpotTitle8" Text="スポット名" FontSize="60"/>
+                    <Button Content="写真表示" Click="ShowImage8_Click" Margin="10,0" Background="#FF9800" Foreground="White" FontWeight="Bold" CornerRadius="10" Padding="12,6"/>
+                    <TextBlock x:Name="SpotComment1_Line8" Text="コメント8行目" FontSize="40" />
+
+
+                </StackPanel>
+
+
+            </StackPanel>
+
+            <!-- 画像表示領域 (Canvasを使って配置) -->
+            <Canvas x:Name="ImageCanvas" Margin="0,100,20,0">
+                <!-- 画像1 -->
+                <Image x:Name="SpotImage1" Width="400" Height="280" Canvas.Left="1100" Canvas.Top="70" />
+                <!-- 画像2 -->
+                <Image x:Name="SpotImage2" Width="400" Height="280" Canvas.Left="1100" Canvas.Top="380" />
+                <!-- 画像3 -->
+                <Image x:Name="SpotImage3" Width="400" Height="280" Canvas.Left="1100" Canvas.Top="690" />
+                <!-- 画像4 -->
+                <Image x:Name="SpotImage4" Width="400" Height="280" Canvas.Left="1100" Canvas.Top="1020" />
+                <!-- 画像5 -->
+                <Image x:Name="SpotImage5" Width="400" Height="280" Canvas.Left="1100" Canvas.Top="1350" />
+                <!-- 画像6 -->
+                <Image x:Name="SpotImage6" Width="400" Height="280" Canvas.Left="1100" Canvas.Top="1670" />
+                <!-- 画像7 -->
+                <Image x:Name="SpotImage7" Width="400" Height="280" Canvas.Left="1100" Canvas.Top="2020" />
+                <!-- 画像8 -->
+                <Image x:Name="SpotImage8" Width="400" Height="280" Canvas.Left="1100" Canvas.Top="2340" />
+            </Canvas>
+
+            <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Bottom"
+                            Margin="0,0,0,20"
+                            Spacing="10">
+                <Button Content="&lt;&lt;" Click="PrevPage_Click"
+                            Background="Transparent"
+                            BorderBrush="#0078D7" Foreground="#0078D7" BorderThickness="2"
+                            Width="60" CornerRadius="6"/>
+                <TextBlock x:Name="PageLabel" Text="1 京都" FontSize="20"
+                               VerticalAlignment="Center" Margin="10,0"/>
+                <Button Content="&gt;&gt;" Click="NextPage_Click"
+                            Background="Transparent"
+                            BorderBrush="#0078D7" Foreground="#0078D7" BorderThickness="2"
+                            Width="60" CornerRadius="6"/>
+            </StackPanel>
+            <!-- Nút quay lại -->
+            <Button Content="戻る"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom"
+                        Margin="0,0,20,20"
+                        Width="100"
+                        Background="Transparent"
+                        BorderBrush="#0078D7"
+                        BorderThickness="2"
+                        Foreground="#0078D7"
+                        CornerRadius="6"
+                        Click="HomePage_click"/>
+        </Grid>
+    </ScrollViewer>
+</Page>

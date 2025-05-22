@@ -5,6 +5,7 @@
 // ユーザー情報を表す構造体
 struct User
 {
+	int id;
 	std::wstring email;
 	std::wstring password;
 	std::wstring name;

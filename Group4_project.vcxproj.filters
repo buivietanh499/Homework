@@ -34,19 +34,175 @@
     <Image Include="Assets\SplashScreen.scale-200.png">
       <Filter>Assets</Filter>
     </Image>
-    <Image Include="Assets\Square150x150Logo.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\Square44x44Logo.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\StoreLogo.png">
-      <Filter>Assets</Filter>
-    </Image>
     <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\Users\alten\Downloads\fuji_mountain.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\Users\alten\Downloads\fuji_mountain_2.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\header.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\test.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\hana.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\ra-menn.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\suki-.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\susi.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\tokeidai.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\unnga.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\usi.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\hokkaidou\zingisukann.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\fushimiinari.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\kimono.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\kinkakuji.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\mattay.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\tyadou.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\yatsuhashi.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\yudouhu.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\go-yatyanpuru.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\kouritou.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\so-kisoba.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\suizokukann.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\syamisenn.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\syuno-keringu.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\syurizyou.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\okinawa\takoraisu.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\ShowPlan1\ShowPlan1\ShowPlan1\Assets\kyouto\kiyomizudera.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hokkaidou\hana.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hokkaidou\ra-menn.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hokkaidou\suki-.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hokkaidou\susi.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hokkaidou\tokeidai.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hokkaidou\unnga.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hokkaidou\usi.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hokkaidou\zingisukann.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\kyouto\fushimiinari.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\kyouto\kimono.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\kyouto\kinkakuji.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\kyouto\kiyomizudera.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\kyouto\mattay.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\kyouto\tyadou.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\kyouto\yatsuhashi.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\kyouto\yudouhu.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\okinawa\go-yatyanpuru.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\okinawa\kouritou.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\okinawa\so-kisoba.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\okinawa\suizokukann.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\okinawa\syamisenn.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\okinawa\syuno-keringu.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\okinawa\syurizyou.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\okinawa\takoraisu.jpg">
       <Filter>Assets</Filter>
     </Image>
   </ItemGroup>
@@ -58,6 +214,7 @@
     <Page Include="LoginPage.xaml" />
     <Page Include="RegisterPage.xaml" />
     <Page Include="HomePage.xaml" />
+    <Page Include="PlanDetailPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\users.csv">
