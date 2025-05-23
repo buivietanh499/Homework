@@ -2,6 +2,7 @@
 #include "HomePage.xaml.h"  
 #include "MainPage.xaml.h"  
 #include "PlanDetailPage.xaml.h"
+#include "TravelBookPage.xaml.h"
 #include "Data/UserSession.h"
 
 using namespace Group4_project;
@@ -40,7 +41,13 @@ void HomePage::Logout_Click(Object^ sender, RoutedEventArgs^ e)
 	this->Frame->Navigate(Windows::UI::Xaml::Interop::TypeName(MainPage::typeid));
 }
 
-void HomePage::Button1_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+void HomePage::PlanDetailPage_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
 	this->Frame->Navigate(Windows::UI::Xaml::Interop::TypeName(PlanDetailPage::typeid));;
 }
+
+void HomePage::TravelBookPage_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	this->Frame->Navigate(Windows::UI::Xaml::Interop::TypeName(TravelBookPage::typeid));;
+}
+

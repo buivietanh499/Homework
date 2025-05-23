@@ -221,6 +221,7 @@
     <Page Include="RegisterPage.xaml" />
     <Page Include="HomePage.xaml" />
     <Page Include="PlanDetailPage.xaml" />
+    <Page Include="TravelBookPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\users.csv">

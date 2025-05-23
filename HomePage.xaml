@@ -66,7 +66,8 @@
                     FontSize="18"
                     Background="#0078D7"
                     Foreground="White"
-                    CornerRadius="6"/>
+                    CornerRadius="6"
+                    Click="TravelBookPage_Click"/>
             <Button x:Name="Button2"
                     Content="予約確認・削除"
                     Width="220"
@@ -85,7 +86,7 @@
                     Background="#0078D7"
                     Foreground="White"
                     CornerRadius="6"
-                    Click="Button1_Click"/>
+                    Click="PlanDetailPage_Click"/>
         </StackPanel>
     </Grid>
 </Page>

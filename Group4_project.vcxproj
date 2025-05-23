@@ -188,6 +188,9 @@
     <ClInclude Include="RegisterPage.xaml.h">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="TravelBookPage.xaml.h">
+      <DependentUpon>TravelBookPage.xaml</DependentUpon>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -206,6 +209,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="RegisterPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TravelBookPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
@@ -305,6 +311,9 @@
     </ClCompile>
     <ClCompile Include="RegisterPage.xaml.cpp">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="TravelBookPage.xaml.cpp">
+      <DependentUpon>TravelBookPage.xaml</DependentUpon>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
