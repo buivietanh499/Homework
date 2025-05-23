@@ -1,17 +1,13 @@
 #pragma once
 #include <string>
 #include <vector>
-
-// ユーザー情報を表す構造体
 struct User
 {
-	int id;
+	std::wstring id;
 	std::wstring email;
 	std::wstring password;
 	std::wstring name;
 };
-
-// ユーザーデータの読み書きを補助するクラス
 class UserDataHelper
 {
 public:

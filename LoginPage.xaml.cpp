@@ -11,16 +11,27 @@ using namespace Windows::UI::Xaml;
 using namespace Windows::UI::Xaml::Controls;
 using namespace Windows::UI::Xaml::Navigation;
 using namespace Windows::UI::Xaml::Interop;
+// Hàm hiển thị dialog thông báo
+void ShowDialog(String^ title, String^ content)
+{
+	ContentDialog^ dialog = ref new ContentDialog();
+	dialog->Title = title;
+	dialog->Content = content;
+	dialog->CloseButtonText = "OK";
+	dialog->ShowAsync();
+}
+// Constructor
 LoginPage::LoginPage()
 {
 	InitializeComponent();
 }
+// Xử lý khi nhấn nút Login
 void LoginPage::LoginButton_Click(Object^ sender, RoutedEventArgs^ e)
 {
 	std::wstring email = EmailTextBox->Text->Data();
 	std::wstring password = PasswordTextBox->Password->Data();
 	auto users = UserDataHelper::LoadUsers();
-	for (auto& user : users)
+	for (const auto& user : users)
 	{
 		if (user.email == email && user.password == password)
 		{
@@ -28,11 +39,7 @@ void LoginPage::LoginButton_Click(Object^ sender, RoutedEventArgs^ e)
 			return;
 		}
 	}
-	ContentDialog^ dialog = ref new ContentDialog();
-	dialog->Title = "ログインに失敗しました";
-	dialog->Content = "メールアドレスまたはパスワードが間違っています。";
-	dialog->CloseButtonText = "OK";
-	dialog->ShowAsync();
+	ShowDialog("ログインに失敗しました", "メールアドレスまたはパスワードが間違っています。");
 }
 void LoginPage::GoBackToMainPage_Click(Object^ sender, RoutedEventArgs^ e)
 {
@@ -42,9 +49,3 @@ void LoginPage::GoToRegisterPage_Click(Object^ sender, RoutedEventArgs^ e)
 {
 	this->Frame->Navigate(TypeName(RegisterPage::typeid));
 }
-
-
-
-
-
-

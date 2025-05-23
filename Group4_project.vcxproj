@@ -168,6 +168,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Data\UserDataHelper.h" />
+    <ClInclude Include="Data\UserSession.h" />
     <ClInclude Include="HomePage.xaml.h">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </ClInclude>
@@ -279,6 +280,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="Data\UserDataHelper.cpp" />
+    <ClCompile Include="Data\UserSession.cpp" />
     <ClCompile Include="HomePage.xaml.cpp">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </ClCompile>

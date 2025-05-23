@@ -15,6 +15,14 @@ RegisterPage::RegisterPage()
 {
 	InitializeComponent();
 }
+void ShowErrorDialog(String^ title, String^ content)
+{
+	ContentDialog^ dialog = ref new ContentDialog();
+	dialog->Title = title;
+	dialog->Content = content;
+	dialog->CloseButtonText = "OK";
+	dialog->ShowAsync();
+}
 void RegisterPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 {
 	std::wstring email = EmailTextBox->Text->Data();
@@ -23,62 +31,40 @@ void RegisterPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 	std::wstring confirmPassword = ConfirmPasswordTextBox->Password->Data();
 	if (email.empty() || name.empty() || password.empty() || confirmPassword.empty())
 	{
-		ContentDialog^ dialog = ref new ContentDialog();
-		dialog->Title = "入力エラー";
-		dialog->Content = "すべての項目を入力してください。";
-		dialog->CloseButtonText = "OK";
-		dialog->ShowAsync();
+		ShowErrorDialog("入力エラー", "すべての項目を入力してください。");
 		return;
 	}
 	std::wregex emailRegex(LR"((\w+)(\.|_)?(\w*)@(\w+)(\.(\w+))+)");
 	if (!std::regex_match(email, emailRegex))
 	{
-		ContentDialog^ dialog = ref new ContentDialog();
-		dialog->Title = "入力エラー";
-		dialog->Content = "正しいメールアドレスを入力してください。";
-		dialog->CloseButtonText = "OK";
-		dialog->ShowAsync();
+		ShowErrorDialog("入力エラー", "正しいメールアドレスを入力してください。");
 		return;
 	}
 	if (password.length() < 3)
 	{
-		ContentDialog^ dialog = ref new ContentDialog();
-		dialog->Title = "入力エラー";
-		dialog->Content = "パスワードは3文字以上で入力してください。";
-		dialog->CloseButtonText = "OK";
-		dialog->ShowAsync();
+		ShowErrorDialog("入力エラー", "パスワードは3文字以上で入力してください。");
 		return;
 	}
 	if (password != confirmPassword)
 	{
-		ContentDialog^ dialog = ref new ContentDialog();
-		dialog->Title = "入力エラー";
-		dialog->Content = "パスワードと確認用パスワードが一致しません。";
-		dialog->CloseButtonText = "OK";
-		dialog->ShowAsync();
+		ShowErrorDialog("入力エラー", "パスワードと確認用パスワードが一致しません。");
 		return;
 	}
+	// Kiểm tra email trùng lặp
 	if (UserDataHelper::IsEmailExists(email))
 	{
-		ContentDialog^ dialog = ref new ContentDialog();
-		dialog->Title = "入力エラー";
-		dialog->Content = "このメールアドレスはすでに使用されています。";
-		dialog->CloseButtonText = "OK";
-		dialog->ShowAsync();
+		ShowErrorDialog("入力エラー", "このメールアドレスはすでに使用されています。");
 		return;
 	}
-	User newUser{ 0, email, password, name }; // ID = 0, UserDataHelper sẽ tự cấp ID
+	// ID sẽ được UserDataHelper tự sinh dưới dạng P01, P02,...
+	User newUser{ L"", email, password, name };
 	if (UserDataHelper::SaveUser(newUser))
 	{
 		this->Frame->Navigate(TypeName(LoginPage::typeid));
 	}
 	else
 	{
-		ContentDialog^ dialog = ref new ContentDialog();
-		dialog->Title = "エラー";
-		dialog->Content = "アカウントを保存できませんでした。";
-		dialog->CloseButtonText = "OK";
-		dialog->ShowAsync();
+		ShowErrorDialog("エラー", "アカウントを保存できませんでした。");
 	}
 }
 void RegisterPage::GoToLoginPage_Click(Object^ sender, RoutedEventArgs^ e)
@@ -89,12 +75,3 @@ void RegisterPage::GoBackToMainPage_Click(Object^ sender, RoutedEventArgs^ e)
 {
 	this->Frame->Navigate(TypeName(MainPage::typeid));
 }
-
-
-
-
-
-
-
-
-

@@ -20,10 +20,16 @@
     <ClCompile Include="Data\UserDataHelper.cpp">
       <Filter>Data</Filter>
     </ClCompile>
+    <ClCompile Include="Data\UserSession.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Data\UserDataHelper.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\UserSession.h">
       <Filter>Data</Filter>
     </ClInclude>
   </ItemGroup>
