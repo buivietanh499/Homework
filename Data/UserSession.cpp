@@ -1,10 +1,8 @@
-//#include "pch.h"
-//#include "UserSession.h"
-//namespace Group4_project
-//{
-//	Platform::String^ UserSession::CurrentUserID = nullptr;
-//	Platform::String^ UserSession::CurrentUserName = nullptr;
-//	Platform::String^ UserSession::CurrentUserEmail = nullptr;
-//	bool UserSession::IsLoggedIn = false;
-//}
-#include "pch.h"
+﻿#include "pch.h"
+#include "UserSession.h"
+
+namespace Group4_project
+{
+	// Không cần khởi tạo lại các biến tĩnh trong .cpp vì đã xử lý trong static constructor
+	// Compiler sẽ tự động gọi Initialize() khi class được sử dụng lần đầu
+}

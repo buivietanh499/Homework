@@ -50,13 +50,11 @@ void RegisterPage::RegisterButton_Click(Object^ sender, RoutedEventArgs^ e)
 		ShowErrorDialog("入力エラー", "パスワードと確認用パスワードが一致しません。");
 		return;
 	}
-	// Kiểm tra email trùng lặp
 	if (UserDataHelper::IsEmailExists(email))
 	{
 		ShowErrorDialog("入力エラー", "このメールアドレスはすでに使用されています。");
 		return;
 	}
-	// ID sẽ được UserDataHelper tự sinh dưới dạng P01, P02,...
 	User newUser{ L"", email, password, name };
 	if (UserDataHelper::SaveUser(newUser))
 	{

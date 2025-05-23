@@ -3,6 +3,7 @@
 #include "MainPage.xaml.h"
 #include "HomePage.xaml.h"
 #include "RegisterPage.xaml.h"
+#include "Data/UserSession.h"
 #include <Windows.UI.Xaml.Interop.h>
 #include <Data/UserDataHelper.h>
 using namespace Group4_project;
@@ -35,6 +36,12 @@ void LoginPage::LoginButton_Click(Object^ sender, RoutedEventArgs^ e)
 	{
 		if (user.email == email && user.password == password)
 		{
+			// Lưu thông tin người dùng vào UserSession
+			UserSession::SetUserInfo(
+				ref new Platform::String(user.id.c_str()),
+				ref new Platform::String(user.name.c_str()),
+				ref new Platform::String(user.email.c_str())
+			);
 			this->Frame->Navigate(TypeName(HomePage::typeid));
 			return;
 		}
