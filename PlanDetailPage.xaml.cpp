@@ -49,6 +49,10 @@ void PlanDetailPage::ShowImage1_Click(Object^ sender, RoutedEventArgs^ e)
 	case 3:
 		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/hokkaidou/tokeidai.jpg"));
 		break;
+
+	case 4:
+		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/yurukyara/mayumaro.png"));
+		break;
 	}
 
 	SpotImage1->Source = image;
@@ -70,7 +74,12 @@ void PlanDetailPage::ShowImage2_Click(Object^ sender, RoutedEventArgs^ e)
 	case 3:
 		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/hokkaidou/unnga.jpg"));
 		break;
+
+	case 4:
+		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/yurukyara/negi-man.png"));
+		break;
 	}
+
 
 	SpotImage2->Source = image;
 }
@@ -91,6 +100,10 @@ void PlanDetailPage::ShowImage3_Click(Object^ sender, RoutedEventArgs^ e)
 		break;
 	case 3:
 		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/hokkaidou/hana.jpg"));
+		break;
+
+	case 4:
+		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/yurukyara/zinkun.jpg"));
 		break;
 	}
 
@@ -114,6 +127,10 @@ void PlanDetailPage::ShowImage4_Click(Object^ sender, RoutedEventArgs^ e)
 	case 3:
 		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/hokkaidou/zingisukann.jpg"));
 		break;
+
+	case 4:
+		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/yurukyara/meronkuma.jpg"));
+		break;
 	}
 
 	SpotImage4->Source = image;
@@ -135,6 +152,10 @@ void PlanDetailPage::ShowImage5_Click(Object^ sender, RoutedEventArgs^ e)
 		break;
 	case 3:
 		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/hokkaidou/ra-menn.jpg"));
+		break;
+
+	case 4:
+		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/yurukyara/ryuutyan.jpg"));
 		break;
 	}
 
@@ -158,6 +179,10 @@ void PlanDetailPage::ShowImage6_Click(Object^ sender, RoutedEventArgs^ e)
 	case 3:
 		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/hokkaidou/susi.jpg"));
 		break;
+
+	case 4:
+		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/yurukyara/kamenn.jpg"));
+		break;
 	}
 
 	SpotImage6->Source = image;
@@ -180,6 +205,10 @@ void PlanDetailPage::ShowImage7_Click(Object^ sender, RoutedEventArgs^ e)
 	case 3:
 		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/hokkaidou/suki-.jpg"));
 		break;
+
+	case 4:
+		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/yurukyara/fot.png"));
+		break;
 	}
 
 	SpotImage7->Source = image;
@@ -201,6 +230,10 @@ void PlanDetailPage::ShowImage8_Click(Object^ sender, RoutedEventArgs^ e)
 		break;
 	case 3:
 		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/hokkaidou/usi.jpg"));
+		break;
+
+	case 4:
+		image = ref new BitmapImage(ref new Uri("ms-appx:///Assets/yurukyara/ber.png"));
 		break;
 	}
 
@@ -227,7 +260,7 @@ void PlanDetailPage::PrevPage_Click(Object^ sender, RoutedEventArgs^ e)
 
 void PlanDetailPage::NextPage_Click(Object^ sender, RoutedEventArgs^ e)
 {
-	if (currentPage < 3)
+	if (currentPage < 4)
 	{
 		currentPage++;
 		UpdatePage();
@@ -343,6 +376,26 @@ void PlanDetailPage::UpdatePage()
 		SpotTitle8->Text = "牧場体験";
 		SpotComment1_Line8->Text = "牛の乳しぼりやアイスクリーム作りができる牧場体験。\n北海道ならではの自然を感じながら、農業体験を楽しめます。\n\n";
 
+		break;
+	case 4:
+		AreaTitle->Text = "ご当地キャラ特集";
+		PageLabel->Text = "4 ゆるキャラ";
+		SpotTitle1->Text = "まゆまろ（京都）";
+		SpotComment1_Line1->Text = "京都府の広報監。まゆ玉の形をした平安装束キャラ。\nほっこり笑顔が人気で、全国ゆるキャラグランプリ常連！\n\n";
+		SpotTitle2->Text = "ネギーまん（京都・九条ねぎ）";
+		SpotComment1_Line2->Text = "九条ねぎをモチーフにした京都のローカルヒーロー。\n頭がネギ！野菜のパワーで悪を倒す！？\n\n";
+		SpotTitle3->Text = "ジンくん（北海道）";
+		SpotComment1_Line3->Text = "ジンギスカンの妖精キャラ。鉄鍋帽子と羊スタイルが特徴。\n優しい性格で、北海道グルメをPR中！\n\n";
+		SpotTitle4->Text = "メロン熊（北海道・夕張）";
+		SpotComment1_Line4->Text = "夕張メロンと熊が合体！？\nちょっと怖い顔だけど、イベントでは大人気！\n\n";
+		SpotTitle5->Text = "りゅうちゃん（沖縄）";
+		SpotComment1_Line5->Text = "沖縄県警の安全マスコット。\n龍をモチーフにした子どもに人気の頼れるキャラ！\n\n";
+		SpotTitle6->Text = "ウラソエ仮面（沖縄）";
+		SpotComment1_Line6->Text = "浦添市のヒーローキャラ。\n交通安全や地域イベントで活躍中！\n\n";
+		SpotTitle7->Text = "キャラと記念写真！";
+		SpotComment1_Line7->Text = "イベントや観光地で出会えたらぜひ記念撮影を。\nかわいい姿と思い出を一緒に残そう！\n\n";
+		SpotTitle8->Text = "あなたの推しは？";
+		SpotComment1_Line8->Text = "お気に入りのキャラは見つかった？\n旅のお土産にグッズもおすすめ！\n\n";
 		break;
 	}
 }

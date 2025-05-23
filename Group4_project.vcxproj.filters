@@ -211,6 +211,30 @@
     <Image Include="Assets\okinawa\takoraisu.jpg">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="Assets\yurukyara\ber.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\yurukyara\fot.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\yurukyara\kamenn.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\yurukyara\mayumaro.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\yurukyara\meronkuma.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\yurukyara\negi-man.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\yurukyara\ryuutyan.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\yurukyara\zinkun.jpg">
+      <Filter>Assets</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />
@@ -222,11 +246,15 @@
     <Page Include="HomePage.xaml" />
     <Page Include="PlanDetailPage.xaml" />
     <Page Include="TravelBookPage.xaml" />
+    <Page Include="ConfirmPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\users.csv">
       <Filter>Data</Filter>
     </None>
     <None Include=".gitignore" />
+    <None Include="Data\BookingList.csv">
+      <Filter>Data</Filter>
+    </None>
   </ItemGroup>
 </Project>

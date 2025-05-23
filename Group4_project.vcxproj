@@ -167,6 +167,9 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ConfirmPage.xaml.h">
+      <DependentUpon>ConfirmPage.xaml</DependentUpon>
+    </ClInclude>
     <ClInclude Include="Data\UserDataHelper.h" />
     <ClInclude Include="Data\UserSession.h" />
     <ClInclude Include="HomePage.xaml.h">
@@ -196,6 +199,9 @@
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ConfirmPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -280,10 +286,21 @@
     <Image Include="Assets\okinawa\takoraisu.jpg" />
     <Image Include="Assets\SplashScreen.scale-200.png" />
     <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Image Include="Assets\yurukyara\ber.png" />
+    <Image Include="Assets\yurukyara\fot.png" />
+    <Image Include="Assets\yurukyara\kamenn.jpg" />
+    <Image Include="Assets\yurukyara\mayumaro.png" />
+    <Image Include="Assets\yurukyara\meronkuma.jpg" />
+    <Image Include="Assets\yurukyara\negi-man.png" />
+    <Image Include="Assets\yurukyara\ryuutyan.jpg" />
+    <Image Include="Assets\yurukyara\zinkun.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.xaml.cpp">
       <DependentUpon>App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="ConfirmPage.xaml.cpp">
+      <DependentUpon>ConfirmPage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="Data\UserDataHelper.cpp" />
     <ClCompile Include="Data\UserSession.cpp" />
@@ -318,6 +335,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="Data\BookingList.csv" />
     <None Include="Data\users.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

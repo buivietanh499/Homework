@@ -57,7 +57,7 @@ bool UserDataHelper::SaveUser(const User& user)
 		auto users = LoadUsers();
 		int nextIdNumber = static_cast<int>(users.size());
 		std::wstringstream idStream;
-		idStream << L"P" << std::setw(2) << std::setfill(L'0') << nextIdNumber;
+		idStream << L"U" << std::setw(2) << std::setfill(L'0') << nextIdNumber;
 		std::wstring newId = idStream.str();
 		auto folder = ApplicationData::Current->LocalFolder;
 		std::wstring path = folder->Path->Data() + std::wstring(L"\\users.csv");
